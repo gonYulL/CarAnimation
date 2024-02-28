@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/anime.js"></script>
+    <style>
+    #blue{width:100px; height:100px;
+        background:Blue;
+        radius:50%;
+        position:absolute;}
+    </style>
+</head>
+<body>
+<div id="blue"></div>
+<script>
+    anime({
+  targets: '#blue',
+  translateX: 250,
+  direction: 'alternate',
+  loop: true,
+  easing: 'linear'
+});
+</script>
+</body>
+</html>

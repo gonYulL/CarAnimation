@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/anime.js"></script>
+    <style>
+    .a{width:100px; height:100px;
+        background:red;
+        position:absolute;}
+    </style>
+</head>
+
+<body>
+<div class="a"></div>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#fff;}
+</style>
+<path class="st0" d="M430.03,119.81c-194.59,115.54-228.38,135.81-200,173.65s-94.59,40.54,75,77.7s275.68,202.03,306.76,54.05
+	c31.08-147.97,39.86-129.73,32.43-179.73c-7.43-50,16.89-66.22-21.62-95.95c-38.51-29.73-31.76-42.57-109.46-36.49"/>
+</svg>
+<script>
+var path = anime.path('#Layer_1 path');
+
+anime({
+  targets: '.a',
+  translateX: path('x'),
+  translateY: path('y'),
+  rotate: path('angle'),
+  easing: 'linear',
+  duration: 2000,
+  loop: true
+});
+</script>
+</body>
+</html>

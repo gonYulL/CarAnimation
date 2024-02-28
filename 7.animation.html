@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{margin:0; padding:0;}
+    /*1*/
+    #ani1{width:30px; height:30px;
+        background:blue;
+        border-radius:50%;
+        position:relative; left:200px; top:20px;
+        animation-name:ani1;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+
+    @keyframes ani1{
+        100%{background:yellow;
+            left:200px; top:20px;}
+        50%{background:red;}
+        0%{left:20px; top:20px;}
+    }
+
+    /*2, 3*/
+    #ani2{width:80px; height:15px;
+        background:green;
+        border-radius:20px;
+        position:relative; left:50px; top:50px;
+    
+        animation-name:ani2;
+        animation-duration:1s; /*전체 동작시간*/
+        animation-timing-function:ease; /*가감속*/
+        animation-iteration-count:infinite; /*infinite : 영원히 반복*/
+        animation-direction:alternate; /*normal : 원래방향, alternate : 다음 턴에서 반대로, reverse : 반대로*/}
+    
+    @keyframes ani2{
+        0%{transform:rotate(0deg);}
+        100%{transform:rotate(360deg);}
+    }
+
+    #ani3{width:80px; height:15px;
+        background:green;
+        border-radius:20px;
+        position:relative; left:100px; top:50px;
+    
+        animation-name:ani3;
+        animation-duration:1s; /*전체 동작시간*/
+        animation-timing-function:ease; /*가감속*/
+        animation-iteration-count:infinite; /*infinite : 영원히 반복*/
+        animation-direction:alternate;}
+
+    @keyframes ani3{
+        0%{transform:rotate(0deg);}
+        100%{transform:rotate(-360deg);}
+    }
+
+    /*4*/
+    #ani4{width:40px; height:40px;
+        background:orange;
+        border-radius:50%;
+        position:relative; left:10px; top:60px;
+    
+        animation-name:ani4;
+        animation-duration:1s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+
+    @keyframes ani4{
+        0%{left:10px; top:60px;}
+        25%{top:0px;}
+        50%{left:50px; top:0px;}
+        100%{left:50px; top:150px;}
+    }
+
+    /*5*/
+    #ani5{width:45px; height:45px;
+        background:blue;
+        border-radius:50%;
+        position:relative; left:200px; top:150px;
+    
+        animation-name:ani5;
+        animation-duration:1s;
+        animation-iteration-count:infinite;
+        animation-direction:normal;}
+    @keyframes ani5{
+        0%{left:200px; top:150px;}
+        25%{left:270px; top:150px;
+            background:magenta;}
+        50%{left:270px; top:220px;
+            background:orangered;}
+        75%{left:200px; top:220px;
+            background:yellowgreen;}
+    }
+
+    /*6*/
+    #ani6{width:50px; height:50px;
+        background:orange;
+        border-radius:10px;
+        position:relative; left:50px; top:500px;
+        
+        animation-name:ani6;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+    @keyframes ani6{
+        0%{transform:scale(1);
+            left:50px; top:500px;}
+        100%{transform:scale(.2);
+            left:20px; top:300px;
+            background:yellow;
+            border-radius:50%;}
+    }
+
+    /*7*/
+    #ani7{width:500px; height:50px;
+        background:#333;
+        color:#fff;
+        line-height:50px;
+        margin:0 auto;
+        position:relative; top:600px;
+    
+        animation-name:ani7;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+
+    @keyframes ani7{
+        0%{width:500px;}
+        100%{width:200px;
+            left:50px; top:550px;}
+    }
+
+    /*8, 9*/
+    #ani8{width:30px; height:60px;
+        background:aqua;
+        border-radius:12px;
+        position:absolute; left:1800px; top:50px;
+        transform:rotate(-10deg);
+
+        animation-name:ani8;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+    
+    @keyframes ani8{
+        0%{left:1800px; top:50px;
+            transform:rotate(-10deg);}
+        10%{transform:rotate(10deg);}
+        20%{transform:rotate(-10deg);}
+        30%{transform:rotate(10deg);}
+        40%{transform:rotate(-10deg);}
+        50%{transform:rotate(10deg);}
+        60%{transform:rotate(-10deg);}
+        70%{transform:rotate(10deg);}
+        80%{transform:rotate(-10deg);}
+        90%{transform:rotate(10deg);}
+        100%{left:1000px; top:50px;
+            transform:rotate(-10deg);}
+    }
+
+    #ani9{width:30px; height:60px;
+        background:aqua;
+        border-radius:12px;
+        position:absolute; left:1800px; top:110px;
+        transform:rotate(-10deg);
+
+        animation-name:ani9;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+    
+    @keyframes ani9{
+        0%{left:1800px; top:110px;
+            transform:rotate(-30deg);}
+        10%{transform:rotate(30deg);}
+        20%{transform:rotate(-30deg);}
+        30%{transform:rotate(30deg);}
+        40%{transform:rotate(-30deg);}
+        50%{transform:rotate(30deg);}
+        60%{transform:rotate(-30deg);}
+        70%{transform:rotate(30deg);}
+        80%{transform:rotate(-30deg);}
+        90%{transform:rotate(30deg);}
+        100%{left:1000px; top:110px;
+            transform:rotate(-10deg);}
+    }
+
+    /*10*/
+    #ani10_line{width:300px; height:30px;
+        border-bottom:2px solid magenta;
+        float:right;
+        transform:rotate(-20deg);}
+    #ani10{width:30px; height:30px;
+        background:magenta;
+        float:Right;
+        position:relative; right:30px; top:-48px;
+        border-radius:50%;
+
+        animation-name:ani10;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:normal;}
+    @keyframes ani10{
+        0%{right:30px; top:-48px;}
+        40%{right:320px; top:60px;}
+        100%{right:320px; top:400px;}
+    }
+
+    /*ani11*/
+    #ani11_line{width:400px; height:50px;
+        border-bottom:2px solid #333;
+        margin:0 auto;
+        position:relative; top:350px;}
+    #ani11{width:40px; height:40px;
+        background:green;
+        border-radius:50%;
+        margin:0 auto;
+        position:relative; top:410px;
+        z-index:1;
+    
+        animation-name:ani11;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:normal;}
+
+    @keyframes ani11{
+        0%{top:410px;}
+        18%{top:360px;}
+        36%{top:410px;}
+        54%{top:300px;}
+        72%{top:410px;}
+        88%{top:200px;}
+        100%{top:410px;}   
+    }
+
+    /*12*/
+    #ani12{width:30px; height:90px;
+        background:steelblue;
+        border-radius:5px;
+        position:absolute; left:40%; top:-100%;
+    
+        animation-name:ani12;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+
+    @keyframes ani12{
+        0%{top:-100%;}
+        100%{top:0;}
+    }
+
+    /*13*/
+    #ani13{width:90px; height:90px;
+        background:blue;
+        border-radius:5px;
+        position:absolute; left:50px; top:80%;
+    
+        animation-name:ani13;
+        animation-duration:1s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;}
+
+    @keyframes ani13{
+        0%{top:80%;}
+        100%{top:90%;}
+    }
+    </style>
+</head>
+<body>
+<div id="ani1">1</div>
+<div id="ani2">2</div>
+<div id="ani3">3</div>
+<div id="ani4">4</div>
+<div id="ani5">5</div>
+<div id="ani6">6</div>
+<div id="ani7">7번 안녕하세요 추민서입니다 기억하세요</div>
+<div id="ani8">8</div>
+<div id="ani9">9</div>
+<div id="ani10">10</div>
+<div id="ani10_line"></div>
+<div id="ani11">11</div>
+<div id="ani11_line"></div>
+<div id="ani12">12</div>
+<div id="ani13">13</div>
+</body>
+</html>

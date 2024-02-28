@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{position:relative; width:100px; height:100px;
+        background:red;
+        animation-name:my; /*이름 필수!*/
+        animation-duration:5s; /*전체 동작시간*/
+        animation-timing-function:linear; /*가감속*/
+        animation-delay:1s;/*지연시간*/
+        animation-iteration-count:2; /*infinite : 영원히 반복*/
+        animation-direction:reverse; /*normal : 원래방향, alternate : 다음 턴에서 반대로, reverse : 반대로*/
+        animation-fill-mode:forwards; /*animation 끝났을때 마지막 상태 유지*/}
+    /*한줄로 : animation:my 동작시간, 가감속, 지연시간, 반복, 방향*/
+    @keyframes my{
+        0%{left:0; top:0; background:red;}
+        25%{left:200px; top:0; background:yellow;}
+        50%{left:200px; top:200px; background:blue;}
+        75%{left:0; top:200px; background:green;}
+        100%{left:0; top:0; background:red;}
+    }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

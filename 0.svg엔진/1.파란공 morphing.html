@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/anime.js"></script>
+    <style>
+    #Layer_1{position:absolute;}
+    </style>
+</head>
+<body>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
+<style type="text/css">
+   .st0{opacity:0.2;fill:#4977BB;}
+   .st1{fill:none;stroke:#4977BB;stroke-miterlimit:10;}
+</style>
+<polygon class="st0" points="567.47,60.22 302.05,60.22 169.34,290.08 302.05,519.94 567.47,519.94 700.18,290.08 "/>
+<polygon class="st0" points="547.93,94.06 321.58,94.06 208.41,290.08 321.58,486.11 547.93,486.11 661.11,290.08 "/>
+<polygon class="st0" points="519.89,142.62 349.62,142.62 264.49,290.08 349.62,437.54 519.89,437.54 605.03,290.08 "/>
+<polygon class="st0" points="494.89,185.92 374.62,185.92 314.49,290.08 374.62,394.24 494.89,394.24 555.03,290.08 "/>
+<polygon class="st1" points="567.47,60.22 302.05,60.22 169.34,290.08 302.05,519.94 567.47,519.94 700.18,290.08 "/>
+</svg>
+
+
+<script>
+anime({
+  targets: '.st1',
+  points: [
+    { value: [
+      '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369',
+      '70 41 118.574 59.369 111.145 132.631 60.855 84.631 20.426 60.369']
+    },
+    { value: '70 6 119.574 60.369 100.145 117.631 39.855 117.631 55.426 68.369' },
+    { value: '70 57 136.574 54.369 89.145 100.631 28.855 132.631 38.426 64.369' },
+    { value: '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369' }
+  ],
+  easing: 'easeOutQuad',
+  duration: 2000,
+  loop: true
+});
+</script>
+</body>
+</html>

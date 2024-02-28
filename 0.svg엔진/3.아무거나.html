@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG ATTRIBUTES</title>
+    <script src="js/anime.js"></script>
+</head>
+<body>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4977BB;}
+</style>
+<polygon class="st0" points="64 68.64 8.574 100 63.446 67.68 64 4 64.554 67.68 119.426 100 "/>
+</svg>
+    <script>
+    anime({
+        targets: ['.st0', 'feTurbulence', 'feDisplacementMap'],
+        points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
+        baseFrequency: 0,
+        scale: 1,
+        loop: true,
+        direction: 'alternate',
+        easing: 'easeInOutExpo'
+      });
+    </script>
+</body>
+</html>

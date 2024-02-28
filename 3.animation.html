@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{width:300px; height:100px;
+        background:yellow;
+        text-align:center; line-height:100px;
+        margin:100px;
+        
+        animation-name:mo;
+        animation-duration:3s;
+        animation-timing-function:ease-out;
+        animation-iteration-count:infinite;
+        }
+
+    @keyframes mo{
+        0%{transform:scale(.3);
+            opacity:.1;
+            }
+        100%{transform:rotate(20deg);
+            opacity:1;}
+    }
+    </style>
+</head>
+<body>
+<div>CSS3 Animation</div>
+</body>
+</html>
